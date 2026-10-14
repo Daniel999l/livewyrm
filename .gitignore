@@ -1,0 +1,11 @@
+node_modules/
+server/public/
+.env
+.env.*
+!.env.example
+npm-debug.log*
+*.log
+.DS_Store
+.vite/
+dist/
+avida-data/

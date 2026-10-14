@@ -1,0 +1,32 @@
+{
+  "name": "livewyrm",
+  "version": "1.0.0",
+  "description": "aiworm ($WYRM): a themed narrative token site. A roaming on-screen organism, a DeepSeek diary voice, and a real on-chain treasury that funds a simulated life. One deployable service: Express serves the built site and the JSON API, and runs the sim loop in the same process.",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "vite build",
+    "start": "node server/src/index.js",
+    "dev:server": "node --watch server/src/index.js",
+    "dev:client": "vite",
+    "smoke": "node server/scripts/smoke-test.js"
+  },
+  "dependencies": {
+    "cors": "2.8.5",
+    "ethers": "6.13.4",
+    "express": "4.21.2",
+    "mongoose": "8.9.5",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "4.3.4",
+    "vite": "5.4.11"
+  },
+  "optionalDependencies": {
+    "mongodb-memory-server": "10.1.3"
+  }
+}
